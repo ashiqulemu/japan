@@ -1053,7 +1053,6 @@ footer .social-sites li a .iconify {
 }
 
 .profile-manage img {
-  width: 35px;
   border-radius: 50%;
 }
 
@@ -1980,6 +1979,35 @@ fieldset legend {
   text-align: center;
   font-weight: bold;
   background-color: #FED831;
+}
+
+.right-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.circle-box {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #F0F2F4;
+  margin-right: 15px;
 }
 
 .square-box {

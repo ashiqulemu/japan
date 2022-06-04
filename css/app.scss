@@ -919,7 +919,7 @@ footer {
 
 .profile-manage {
   img {
-    width: 35px;
+     
     border-radius: 50%;
   }
 
@@ -1805,6 +1805,21 @@ fieldset {
       }
     }
   }
+}
+.right-element{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.circle-box{
+  height: 45px;
+  width: 45px;
+  border-radius:50% ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F0F2F4;
+  margin-right: 15px;
 }
 
 .square-box {
