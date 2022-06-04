@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiimm</title>
     <link href="./css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/app.css">  
+    <link rel="stylesheet" href="./css/app.css">
 </head>
 
 <body>
@@ -16,6 +16,7 @@
         <div class="leftSection wow fadeIn" data-wow-delay=".25s" id='leftSidebar'>
             <div class="user-profile">
                 <div class="close-dashboard-sidebar">
+                    
                     <span class="iconify" onclick="foldSidebar();" data-icon="mdi:window-close"></span>
                 </div>
                 <img src="images/company-logo-your-logo.png" alt="" class="logo">
@@ -85,7 +86,7 @@
                     <li class="nav-item ">
                         <a href="./index.html">
                             <span class="iconify" data-icon="bi:triangle"></span>
-                           Report
+                            Report
                         </a>
                     </li>
                     <li class="nav-item ">
@@ -94,7 +95,7 @@
                             Setting
                         </a>
                     </li>
-                  
+
                     <!-- <li class="nav-item" onclick=" closedrop(event)">
                         <a href="#">
                             <span class="iconify" data-icon="icomoon-free:profile"></span>
@@ -127,25 +128,623 @@
                 <!-- <h6 class="text-capitalize mb-0 border border-light shadow-sm text-white p-2 border-1 d-inline-block mx-auto rounded">
                     <small class="fw-bold">welcome to "Company Name"</small>
                 </h6> -->
-                <div class="right-element"> 
+                <div class="right-element">
                     <div class="dropdown">
-                        <a href="#"  class="btn dropdown-toggle profile-manage" role="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a href="#" class="btn dropdown-toggle profile-manage" role="button" id="dropdownMenuButton1"
+                            data-bs-toggle="dropdown" aria-expanded="false">
                             <img src="./images/profile.png">
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                             <a class="dropdown-item" href="#"><span class="iconify"
-                                data-icon="carbon:user-avatar"></span> Profile</a>
-                        <a class="dropdown-item" href="#"><span class="iconify"
-                                data-icon="ion:log-out-outline"></span> Log Out</a>
+                                    data-icon="carbon:user-avatar"></span> Profile</a>
+                            <a class="dropdown-item" href="#"><span class="iconify"
+                                    data-icon="ion:log-out-outline"></span> Log Out</a>
                         </ul>
-                      </div>
+                    </div>
                 </div>
-
             </div>
+
             <div class="dashboard-content py-2 px-4">
-                <div class="rows bg-white shadow-sm my-3">
-                   dashboard content goes here 
-                </div> 
+                <!-- top info bar -->
+                <div class="row my-4">
+                    <div class="col-lg-6">
+                        <h3 class="title d-inline mb-0 align-middle me-2">32 Employees</h3>
+                         <button class="btn btn-sm btn-custom">+1 <strong>New Hire</strong></button>
+                         <span class="cursor-pointer iconify fs-1 txt-grey align-middle ms-2" onclick="alert('Action will be fired')"
+                          data-icon="bx:search"></span>
+                    </div>
+                    <div class="col-lg-6 d-flex justify-content-end mb-3 align-items-center">
+                        <div class="square-box"><span class="iconify" data-icon="bx:download" onclick="alert('will be download action')"></span></div>
+                        <div class="square-box"><span class="iconify" data-icon="carbon:printer" onclick="alert(' will be print action')"></span></div>
+                        <button class="btn btn-bordered" onclick="alert('Action will be fired')">+ Add Candidate</button>
+
+                    </div>
+                </div>
+                <!-- card start -->
+                <div class="row my-3">
+                    <!-- loop start -->
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card card-style mb-4">
+                            <div class="card-body">
+                                <div class="upperInfo">
+                                    <div class="items">
+                                        <input type="checkbox" name="" id="" class="checkesOrNot">
+                                    </div>
+                                    <div class="items">
+                                        <div class="status active ">Active</div>
+                                        <span class="iconify fs-3 cursor-pointer" id="options" data-bs-toggle="dropdown"
+                                            aria-expanded="false" data-icon="bi:three-dots"></span>
+
+                                        <!-- field options -->
+                                        <ul class=" dropdown-menu border-0 shadow  " aria-labelledby="options">
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="ic:round-alternate-email"></span>
+                                                    
+                                                    <span class="text-muted ps-2">Add Option</span>
+                                                </a>
+                                            </li>
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="bytesize:mail"></span> 
+                                                    <span class="text-muted ps-2 ">  Candidate</span></a>
+                                             </li>
+                                            <li> 
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="iconify text-muted" data-icon="cil:trash"></span>
+                                                 
+                                                <span class="text-muted ps-2"> Delete</span></a>
+                                             </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <img class="rounded-circle object-cover " width="80px" height="80px"
+                                            src="https://assets.puzzlefactory.pl/puzzle/269/643/original.jpg" alt="">
+                                        <p class="fw-bold mt-2 mb-0 userNamme">Ronald Richards</p>
+                                        <small class="mt-n3 text-muted">Project Manager</small>
+                                    </div>
+                                </div>
+
+                                <div class="bottom-part mt-4">
+                                    <div class="upper">
+                                        <div class="item">
+                                            <span class="fw-bold">Department</span>
+                                            <p class="mb-0 infos">Design Team</p>
+                                        </div>
+                                        <div class="item">
+                                            <span class="fw-bold">Date Hired</span>
+                                            <p class="mb-0 infos">17-03-21</p>
+                                        </div>
+                                    </div>
+                                    <div class="dipper">
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:email"></span>
+                                            <span class="txt-theme"> ronald_royale@gmail.com</span>
+                                        </p>
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:phone-filled"></span>
+                                            <span class="txt-theme"> +0021212120</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card card-style mb-4">
+                            <div class="card-body">
+                                <div class="upperInfo">
+                                    <div class="items">
+                                        <input type="checkbox" name="" id="" class="checkesOrNot">
+                                    </div>
+                                    <div class="items">
+                                        <div class="status inactive ">Not Active</div>
+                                        <span class="iconify fs-3 cursor-pointer" id="options" data-bs-toggle="dropdown"
+                                            aria-expanded="false" data-icon="bi:three-dots"></span>
+
+                                        <!-- field options -->
+                                        <ul class=" dropdown-menu border-0 shadow  " aria-labelledby="options">
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="ic:round-alternate-email"></span>
+                                                    
+                                                    <span class="text-muted ps-2">Add Option</span>
+                                                </a>
+                                            </li>
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="bytesize:mail"></span> 
+                                                    <span class="text-muted ps-2 ">  Candidate</span></a>
+                                             </li>
+                                            <li> 
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="iconify text-muted" data-icon="cil:trash"></span>
+                                                 
+                                                <span class="text-muted ps-2"> Delete</span></a>
+                                             </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <img class="rounded-circle object-cover " width="80px" height="80px"
+                                            src="https://nyheadshots.com/wp-content/uploads/2018/07/headshots.jpg" alt="">
+                                        <p class="fw-bold mt-2 mb-0 userNamme">Jack Michel</p>
+                                        <small class="mt-n3 text-muted">UI/UX Designer</small>
+                                    </div>
+                                </div>
+
+                                <div class="bottom-part mt-4">
+                                    <div class="upper">
+                                        <div class="item">
+                                            <span class="fw-bold">Department</span>
+                                            <p class="mb-0 infos">Design Team</p>
+                                        </div>
+                                        <div class="item">
+                                            <span class="fw-bold">Date Hired</span>
+                                            <p class="mb-0 infos">17-03-21</p>
+                                        </div>
+                                    </div>
+                                    <div class="dipper">
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:email"></span>
+                                            <span class="txt-theme"> ronald_royale@gmail.com</span>
+                                        </p>
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:phone-filled"></span>
+                                            <span class="txt-theme"> +0021212120</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card card-style mb-4">
+                            <div class="card-body">
+                                <div class="upperInfo">
+                                    <div class="items">
+                                        <input type="checkbox" name="" id="" class="checkesOrNot">
+                                    </div>
+                                    <div class="items">
+                                        <div class="status unverified ">Unverified</div>
+                                        <span class="iconify fs-3 cursor-pointer" id="options" data-bs-toggle="dropdown"
+                                            aria-expanded="false" data-icon="bi:three-dots"></span>
+
+                                        <!-- field options -->
+                                        <ul class=" dropdown-menu border-0 shadow  " aria-labelledby="options">
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="ic:round-alternate-email"></span>
+                                                    
+                                                    <span class="text-muted ps-2">Add Option</span>
+                                                </a>
+                                            </li>
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="bytesize:mail"></span> 
+                                                    <span class="text-muted ps-2 ">  Candidate</span></a>
+                                             </li>
+                                            <li> 
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="iconify text-muted" data-icon="cil:trash"></span>
+                                                 
+                                                <span class="text-muted ps-2"> Delete</span></a>
+                                             </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <img class="rounded-circle object-cover " width="80px" height="80px"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyatEMw2KpdyvK2hpGJVgBUuAzlekLlJ66YQ&usqp=CAU" alt="">
+                                        <p class="fw-bold mt-2 mb-0 userNamme">John Landish</p>
+                                        <small class="mt-n3 text-muted">Digital Marketer</small>
+                                    </div>
+                                </div>
+
+                                <div class="bottom-part mt-4">
+                                    <div class="upper">
+                                        <div class="item">
+                                            <span class="fw-bold">Department</span>
+                                            <p class="mb-0 infos">Design Team</p>
+                                        </div>
+                                        <div class="item">
+                                            <span class="fw-bold">Date Hired</span>
+                                            <p class="mb-0 infos">17-03-21</p>
+                                        </div>
+                                    </div>
+                                    <div class="dipper">
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:email"></span>
+                                            <span class="txt-theme"> ronald_royale@gmail.com</span>
+                                        </p>
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:phone-filled"></span>
+                                            <span class="txt-theme"> +0021212120</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card card-style mb-4">
+                            <div class="card-body">
+                                <div class="upperInfo">
+                                    <div class="items">
+                                        <input type="checkbox" name="" id="" class="checkesOrNot">
+                                    </div>
+                                    <div class="items">
+                                        <div class="status active ">Active</div>
+                                        <span class="iconify fs-3 cursor-pointer" id="options" data-bs-toggle="dropdown"
+                                            aria-expanded="false" data-icon="bi:three-dots"></span>
+
+                                        <!-- field options -->
+                                        <ul class=" dropdown-menu border-0 shadow  " aria-labelledby="options">
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="ic:round-alternate-email"></span>
+                                                    
+                                                    <span class="text-muted ps-2">Add Option</span>
+                                                </a>
+                                            </li>
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="bytesize:mail"></span> 
+                                                    <span class="text-muted ps-2 ">  Candidate</span></a>
+                                             </li>
+                                            <li> 
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="iconify text-muted" data-icon="cil:trash"></span>
+                                                 
+                                                <span class="text-muted ps-2"> Delete</span></a>
+                                             </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <img class="rounded-circle object-cover " width="80px" height="80px"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZLbzHYpPqsnBZsUtyQ9jyDsmFq6vY5l9MSSJwJ05t96E37XEB-_XdutzBCeiwo3C2VKE&usqp=CAU" alt="">
+                                        <p class="fw-bold mt-2 mb-0 userNamme">Ronald Richards</p>
+                                        <small class="mt-n3 text-muted">Project Manager</small>
+                                    </div>
+                                </div>
+
+                                <div class="bottom-part mt-4">
+                                    <div class="upper">
+                                        <div class="item">
+                                            <span class="fw-bold">Department</span>
+                                            <p class="mb-0 infos">Design Team</p>
+                                        </div>
+                                        <div class="item">
+                                            <span class="fw-bold">Date Hired</span>
+                                            <p class="mb-0 infos">17-03-21</p>
+                                        </div>
+                                    </div>
+                                    <div class="dipper">
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:email"></span>
+                                            <span class="txt-theme"> ronald_royale@gmail.com</span>
+                                        </p>
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:phone-filled"></span>
+                                            <span class="txt-theme"> +0021212120</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card card-style mb-4">
+                            <div class="card-body">
+                                <div class="upperInfo">
+                                    <div class="items">
+                                        <input type="checkbox" name="" id="" class="checkesOrNot">
+                                    </div>
+                                    <div class="items">
+                                        <div class="status active ">Active</div>
+                                        <span class="iconify fs-3 cursor-pointer" id="options" data-bs-toggle="dropdown"
+                                            aria-expanded="false" data-icon="bi:three-dots"></span>
+
+                                        <!-- field options -->
+                                        <ul class=" dropdown-menu border-0 shadow  " aria-labelledby="options">
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="ic:round-alternate-email"></span>
+                                                    
+                                                    <span class="text-muted ps-2">Add Option</span>
+                                                </a>
+                                            </li>
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="bytesize:mail"></span> 
+                                                    <span class="text-muted ps-2 ">  Candidate</span></a>
+                                             </li>
+                                            <li> 
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="iconify text-muted" data-icon="cil:trash"></span>
+                                                 
+                                                <span class="text-muted ps-2"> Delete</span></a>
+                                             </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <img class="rounded-circle object-cover " width="80px" height="80px"
+                                            src="https://assets.puzzlefactory.pl/puzzle/269/643/original.jpg" alt="">
+                                        <p class="fw-bold mt-2 mb-0 userNamme">Ronald Richards</p>
+                                        <small class="mt-n3 text-muted">Project Manager</small>
+                                    </div>
+                                </div>
+
+                                <div class="bottom-part mt-4">
+                                    <div class="upper">
+                                        <div class="item">
+                                            <span class="fw-bold">Department</span>
+                                            <p class="mb-0 infos">Design Team</p>
+                                        </div>
+                                        <div class="item">
+                                            <span class="fw-bold">Date Hired</span>
+                                            <p class="mb-0 infos">17-03-21</p>
+                                        </div>
+                                    </div>
+                                    <div class="dipper">
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:email"></span>
+                                            <span class="txt-theme"> ronald_royale@gmail.com</span>
+                                        </p>
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:phone-filled"></span>
+                                            <span class="txt-theme"> +0021212120</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card card-style mb-4">
+                            <div class="card-body">
+                                <div class="upperInfo">
+                                    <div class="items">
+                                        <input type="checkbox" name="" id="" class="checkesOrNot">
+                                    </div>
+                                    <div class="items">
+                                        <div class="status inactive ">Not Active</div>
+                                        <span class="iconify fs-3 cursor-pointer" id="options" data-bs-toggle="dropdown"
+                                            aria-expanded="false" data-icon="bi:three-dots"></span>
+
+                                        <!-- field options -->
+                                        <ul class=" dropdown-menu border-0 shadow  " aria-labelledby="options">
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="ic:round-alternate-email"></span>
+                                                    
+                                                    <span class="text-muted ps-2">Add Option</span>
+                                                </a>
+                                            </li>
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="bytesize:mail"></span> 
+                                                    <span class="text-muted ps-2 ">  Candidate</span></a>
+                                             </li>
+                                            <li> 
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="iconify text-muted" data-icon="cil:trash"></span>
+                                                 
+                                                <span class="text-muted ps-2"> Delete</span></a>
+                                             </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <img class="rounded-circle object-cover " width="80px" height="80px"
+                                            src="https://nyheadshots.com/wp-content/uploads/2018/07/headshots.jpg" alt="">
+                                        <p class="fw-bold mt-2 mb-0 userNamme">Jack Michel</p>
+                                        <small class="mt-n3 text-muted">UI/UX Designer</small>
+                                    </div>
+                                </div>
+
+                                <div class="bottom-part mt-4">
+                                    <div class="upper">
+                                        <div class="item">
+                                            <span class="fw-bold">Department</span>
+                                            <p class="mb-0 infos">Design Team</p>
+                                        </div>
+                                        <div class="item">
+                                            <span class="fw-bold">Date Hired</span>
+                                            <p class="mb-0 infos">17-03-21</p>
+                                        </div>
+                                    </div>
+                                    <div class="dipper">
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:email"></span>
+                                            <span class="txt-theme"> ronald_royale@gmail.com</span>
+                                        </p>
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:phone-filled"></span>
+                                            <span class="txt-theme"> +0021212120</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card card-style mb-4">
+                            <div class="card-body">
+                                <div class="upperInfo">
+                                    <div class="items">
+                                        <input type="checkbox" name="" id="" class="checkesOrNot">
+                                    </div>
+                                    <div class="items">
+                                        <div class="status unverified ">Unverified</div>
+                                        <span class="iconify fs-3 cursor-pointer" id="options" data-bs-toggle="dropdown"
+                                            aria-expanded="false" data-icon="bi:three-dots"></span>
+
+                                        <!-- field options -->
+                                        <ul class=" dropdown-menu border-0 shadow  " aria-labelledby="options">
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="ic:round-alternate-email"></span>
+                                                    
+                                                    <span class="text-muted ps-2">Add Option</span>
+                                                </a>
+                                            </li>
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="bytesize:mail"></span> 
+                                                    <span class="text-muted ps-2 ">  Candidate</span></a>
+                                             </li>
+                                            <li> 
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="iconify text-muted" data-icon="cil:trash"></span>
+                                                 
+                                                <span class="text-muted ps-2"> Delete</span></a>
+                                             </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <img class="rounded-circle object-cover " width="80px" height="80px"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyatEMw2KpdyvK2hpGJVgBUuAzlekLlJ66YQ&usqp=CAU" alt="">
+                                        <p class="fw-bold mt-2 mb-0 userNamme">John Landish</p>
+                                        <small class="mt-n3 text-muted">Digital Marketer</small>
+                                    </div>
+                                </div>
+
+                                <div class="bottom-part mt-4">
+                                    <div class="upper">
+                                        <div class="item">
+                                            <span class="fw-bold">Department</span>
+                                            <p class="mb-0 infos">Design Team</p>
+                                        </div>
+                                        <div class="item">
+                                            <span class="fw-bold">Date Hired</span>
+                                            <p class="mb-0 infos">17-03-21</p>
+                                        </div>
+                                    </div>
+                                    <div class="dipper">
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:email"></span>
+                                            <span class="txt-theme"> ronald_royale@gmail.com</span>
+                                        </p>
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:phone-filled"></span>
+                                            <span class="txt-theme"> +0021212120</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="card card-style mb-4">
+                            <div class="card-body">
+                                <div class="upperInfo">
+                                    <div class="items">
+                                        <input type="checkbox" name="" id="" class="checkesOrNot">
+                                    </div>
+                                    <div class="items">
+                                        <div class="status active ">Active</div>
+                                        <span class="iconify fs-3 cursor-pointer" id="options" data-bs-toggle="dropdown"
+                                            aria-expanded="false" data-icon="bi:three-dots"></span>
+
+                                        <!-- field options -->
+                                        <ul class=" dropdown-menu border-0 shadow  " aria-labelledby="options">
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="ic:round-alternate-email"></span>
+                                                    
+                                                    <span class="text-muted ps-2">Add Option</span>
+                                                </a>
+                                            </li>
+                                            <li> <a class="dropdown-item" href="#">
+                                                <span class="iconify text-muted" data-icon="bytesize:mail"></span> 
+                                                    <span class="text-muted ps-2 ">  Candidate</span></a>
+                                             </li>
+                                            <li> 
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="iconify text-muted" data-icon="cil:trash"></span>
+                                                 
+                                                <span class="text-muted ps-2"> Delete</span></a>
+                                             </li>
+
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-12 text-center">
+                                        <img class="rounded-circle object-cover " width="80px" height="80px"
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZLbzHYpPqsnBZsUtyQ9jyDsmFq6vY5l9MSSJwJ05t96E37XEB-_XdutzBCeiwo3C2VKE&usqp=CAU" alt="">
+                                        <p class="fw-bold mt-2 mb-0 userNamme">Ronald Richards</p>
+                                        <small class="mt-n3 text-muted">Project Manager</small>
+                                    </div>
+                                </div>
+
+                                <div class="bottom-part mt-4">
+                                    <div class="upper">
+                                        <div class="item">
+                                            <span class="fw-bold">Department</span>
+                                            <p class="mb-0 infos">Design Team</p>
+                                        </div>
+                                        <div class="item">
+                                            <span class="fw-bold">Date Hired</span>
+                                            <p class="mb-0 infos">17-03-21</p>
+                                        </div>
+                                    </div>
+                                    <div class="dipper">
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:email"></span>
+                                            <span class="txt-theme"> ronald_royale@gmail.com</span>
+                                        </p>
+                                        <p class="mb-0">
+                                            <span class="iconify text-black" data-icon="carbon:phone-filled"></span>
+                                            <span class="txt-theme"> +0021212120</span>
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- pagination start -->
+                <div class="row mt-3"> 
+                        <div class="col-12 ">
+                            <ul class="pagination custom float-end">
+                                <li class="page-item disabled">
+                               <span class="page-link text-muted">   <i class="iconify" data-icon="ep:arrow-left"></i> Prev</span>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active" aria-current="page">
+                                  <span class="page-link">2</span>
+                                </li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">...</a></li>
+                                <li class="page-item"><a class="page-link" href="#">24</a></li>
+                                <li class="page-item">
+                                  <a class="page-link fw-normal" href="#">Next<i class="iconify" data-icon="ep:arrow-right"></i></a>
+                                </li>
+                              </ul>
+                        </div>
+                      
+                </div>
             </div>
         </div>
     </div>
@@ -153,9 +752,9 @@
     <!-- footer  -->
 
     <!-- <footer class="py-3 w-100">
+
         <div class="container">
             <div class="d-flex flex-wrap w-100 mx-auto">
-
                 <div class=" flex-fill bd-highlight ">
                     <ul class="m-0 text-white">
                         <li class="list-style-none">+44 (0)xx xxxx 8xxxx</li>
@@ -164,7 +763,7 @@
                     </ul>
                 </div>
                 <div class="p-2 flex-fill bd-highlight">
-                    <img src="images/company-logo-your-logo.png" width="160px">
+                    <img src="images/company-logo-your-logo.png" width="180px">
                 </div>
                 <div class="p-2 d-flex align-items-center footerContact">
                     <a href="" class="mx-2 text-decoration-none text-white">Help</a>
@@ -172,13 +771,14 @@
                 </div>
             </div>
         </div>
+
     </footer> -->
 
 
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/iconify.min.js"></script>  
+    <script src="./js/iconify.min.js"></script>
     <script src='./js/app.js'> </script>
-   
+
     <script>
         // var ctx = document.getElementById("myChart");
         // var myChart = new Chart(ctx, {

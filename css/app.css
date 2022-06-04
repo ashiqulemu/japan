@@ -9,6 +9,10 @@ ul {
   padding: 0;
 }
 
+.txt-theme {
+  color: #243a34;
+}
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -768,6 +772,10 @@ footer .social-sites li a .iconify {
   right: 16px;
   top: 18px;
   display: none;
+}
+
+.dashbaord-main .leftSection .user-profile .close-dashboard-sidebar .iconify {
+  color: #FED831;
 }
 
 @media (max-width: 768px) {
@@ -1857,5 +1865,225 @@ fieldset legend {
 .orderVoucher .voucher .items:nth-child(3) {
   text-align: right;
   font-weight: bold;
+}
+
+.card-style {
+  -webkit-box-shadow: 0 4px 24px 0 #0000001a;
+          box-shadow: 0 4px 24px 0 #0000001a;
+  border: 0;
+  border-radius: 12px;
+}
+
+.upperInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.upperInfo .items {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.upperInfo .items:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.upperInfo .items:nth-child(2) .iconify {
+  color: #8A9297;
+}
+
+.upperInfo .status {
+  padding: 3px 7px;
+  vertical-align: middle;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-radius: 4px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 10px;
+}
+
+.upperInfo .status.active {
+  color: #1DBC98;
+  background-color: #C2FEEE;
+  border: 1px solid #1DBC98;
+}
+
+.upperInfo .status.inactive {
+  color: #F05B64;
+  background-color: #FFEDED;
+  border: 1px solid #F36972;
+}
+
+.upperInfo .status.unverified {
+  color: #d39c37;
+  background-color: #ffecd0;
+  border: 1px solid #EECDB1;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.btn-custom {
+  background: #C6CDD6;
+  color: #24403F;
+  font-size: 12px;
+  display: inline;
+}
+
+.title {
+  color: #223F3E;
+}
+
+.txt-grey {
+  color: #959ca28c !important;
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pagination.custom {
+  border: 0;
+}
+
+.pagination.custom .page-item:not(:first-child) .page-link {
+  font-weight: bold;
+}
+
+.pagination.custom .page-item .page-link {
+  background: 0;
+  border: 0;
+  color: #122C30;
+}
+
+.pagination.custom .page-item.active .page-link {
+  border: 0;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #FED831;
+}
+
+.square-box {
+  height: 45px;
+  width: 45px;
+  margin: 10px 0;
+  background: #fff;
+  border: 1px solid #EEEDF0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+}
+
+.square-box .iconify {
+  color: #8A9096;
+  font-size: 22px;
+}
+
+.btn-bordered {
+  padding: 7px 18px;
+  border: 2px solid #567F7D;
+  background: 0;
+  color: #567F7D;
+  font-weight: 800;
+  border-radius: 4px;
+  font-size: 13px;
+  outline: 0;
+}
+
+.btn-bordered:hover {
+  background: #567F7D;
+  color: #fff;
+}
+
+.checkesOrNot {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 25px;
+  border: 1px solid #d3d3d369;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+.checkesOrNot:checked::after {
+  position: absolute;
+  content: '';
+  height: 15px;
+  width: 15px;
+  background-color: #FED831;
+  left: 4px;
+  top: 4px;
+  border-radius: 3px;
+}
+
+.dropdown-menu {
+  border-radius: 6px !important;
+}
+
+.userNamme {
+  color: #001815;
+}
+
+.bottom-part {
+  background: #F1F8FD;
+  padding: 13px;
+  border: 1px solid #dfdfdf5e;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #363738;
+}
+
+.bottom-part .upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 14px;
+}
+
+.bottom-part .upper .item span {
+  color: #A6B1BF;
+  font-size: 12px;
+}
+
+.bottom-part .upper .item .infos {
+  font-size: 14px;
+  color: #2e2e2e;
+}
+
+.bottom-part .dipper .iconify {
+  font-size: 17px;
+  vertical-align: middle !important;
 }
 /*# sourceMappingURL=app.css.map */
