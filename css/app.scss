@@ -1924,6 +1924,9 @@ fieldset {
   border-bottom: 1px solid #EBEBEB;
 
   .items {
+    @media(max-width:1024px){
+      margin: 6px 0;
+    }
     &:nth-child(1) {
       margin-right: 18px;
     }
@@ -2015,9 +2018,7 @@ fieldset {
       align-items: center;
       display: flex;
 
-      @media(max-width:1024px){
-        margin: 12px 0;
-      }
+      
 
       .username {
         font-size: 15px;

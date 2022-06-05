@@ -2105,6 +2105,12 @@ fieldset legend {
   border-bottom: 1px solid #EBEBEB;
 }
 
+@media (max-width: 1024px) {
+  .candidate-bar .items {
+    margin: 6px 0;
+  }
+}
+
 .candidate-bar .items:nth-child(1) {
   margin-right: 18px;
 }
@@ -2207,12 +2213,6 @@ fieldset legend {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media (max-width: 1024px) {
-  .candidate-bar .items:nth-child(7) {
-    margin: 12px 0;
-  }
 }
 
 .candidate-bar .items:nth-child(7) .username {
