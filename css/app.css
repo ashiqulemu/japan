@@ -13,6 +13,51 @@ ul {
   color: #243a34;
 }
 
+.ms-61 {
+  margin-left: 61px;
+}
+
+.tab-customize .nav-link {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #8F949D !important;
+  font-weight: bold;
+  border: 0;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-customize .nav-link.active {
+  background: 0 !important;
+  border-color: #fed83100 #e9012c00 #21252900;
+  border-bottom: 2px solid #fed831;
+  color: #323232 !important;
+}
+
+.tab-customize .nav-link.hover {
+  border-color: 0 !important;
+  border-bottom: 2px solid #fed831;
+}
+
+.tab-content {
+  padding: 15px 0;
+}
+
+.badge-custom {
+  height: 25px;
+  width: 25px;
+  background: #305E5B;
+  color: #fff;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 @media (min-width: 1400px) {
   .container,
   .container-lg,
@@ -2367,5 +2412,130 @@ fieldset legend {
 .status-box .item.active-pink {
   background: #CC6BC3;
   color: #fff;
+}
+
+.candidate-board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+  .candidate-board {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.candidate-board .items {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 0 10px;
+  -ms-flex-preferred-size: 260px;
+  flex-basis: 216px;
+  min-width: 216px;
+  max-width: 216px;
+}
+
+.candidate-board .items:not(:last-child) {
+  border-right: 1px solid #d3d3d347;
+}
+
+.candidate-board .items .heading {
+  background: #fff;
+  -webkit-box-shadow: 0px 2px 4px black;
+  box-shadow: 0px 1px 7px #00000026;
+  border-radius: 5px;
+  border-top: 4px solid;
+  padding: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 18px;
+}
+
+.candidate-board .items .heading .title {
+  color: #223F3E;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.candidate-board .items .heading .headBadge {
+  background: #EBEBF0;
+  height: 25px;
+  width: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  color: #8f8f8f;
+  border-radius: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.candidate-board .items .item-card {
+  background: #fff;
+  padding: 12px;
+  -webkit-box-shadow: 0px 1px 4px #00000026;
+          box-shadow: 0px 1px 4px #00000026;
+  border-radius: 5px;
+}
+
+.candidate-board .items .item-card .userInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #F3F2F3;
+  padding-bottom: 9px;
+}
+
+.candidate-board .items .item-card .userInfo .name {
+  color: #223F3E;
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+.candidate-board .items .item-card .bottom-info {
+  margin-top: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.candidate-board .items .item-card .bottom-info .rate .iconify {
+  color: #dddddd;
+}
+
+.candidate-board .items .item-card .bottom-info .time {
+  color: #6e6e6e;
+  font-size: 12px;
+  font-weight: bold;
 }
 /*# sourceMappingURL=app.css.map */
