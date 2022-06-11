@@ -1969,7 +1969,7 @@ fieldset {
 
   .items {
     @media(max-width:1024px) {
-      margin: 6px 0;
+      margin: 10px 0;
     }
 
     &:nth-child(1) {
@@ -1984,7 +1984,7 @@ fieldset {
 
       .username {
         font-size: 15px;
-        color: #204744;
+        color: #a1a1a1;
         font-weight: 600;
         margin-left: 8px;
         width: 100%;
@@ -2014,10 +2014,14 @@ fieldset {
     &:nth-child(4) {
       margin-right: 18px;
 
+      @media (max-width:1024px) {
+        min-width: 260px;
+      }
+
       .screening {
         .title {
           font-size: 15px;
-          color: #204744;
+          color: #a1a1a1;
           font-weight: bold;
           display: flex;
         }
@@ -2029,9 +2033,14 @@ fieldset {
       margin-right: 18px;
       word-break: break-all;
 
+      @media(max-width:768px) {
+        display: block;
+        width: 100%;
+      }
+
       .user {
         font-size: 15px;
-        color: #204744;
+        color: #a1a1a1;
         font-weight: 600;
       }
 
@@ -2051,7 +2060,7 @@ fieldset {
 
       .date {
         font-size: 15px;
-        color: #204744;
+        color: #a1a1a1;
         font-weight: 600;
       }
     }
@@ -2063,11 +2072,13 @@ fieldset {
       align-items: center;
       display: flex;
 
-
+      @media(max-width:768px) {
+         flex-basis: 100%;
+      }
 
       .username {
         font-size: 15px;
-        color: #204744;
+        color: #a1a1a1;
         font-weight: 600;
         margin-left: 8px;
       }
@@ -2078,13 +2089,68 @@ fieldset {
       display: flex;
       justify-content: flex-end;
       align-items: center;
-
+      @media(max-width:768px) { 
+        justify-content: flex-start!important;
+     } 
       .options {
         color: #8A97A0;
-        font-size: 2rem;
+        font-size: 1.6rem;
         cursor: pointer;
       }
     }
+  }
+}
+
+.candidate-title-bar {
+  display: none;
+
+  @media(min-width:1366px) {
+    display: flex;
+  }
+
+  @extend .candidate-bar;
+  border: 0 !important;
+  margin-bottom: 20px !important;
+  box-shadow: 1px 1px 5px #0000001a !important;
+
+  .items {
+
+    &:nth-child(4) {
+      min-width: 178px;
+    }
+    &:nth-child(3) {
+      width: 84px;
+    }
+
+    &:nth-child(2) {
+      flex-basis:195px;
+    }
+
+    &:nth-child(5) {
+      min-width: 120px;
+
+    }
+
+    &:nth-child(6) {
+      width: 76px;
+      flex: unset;
+
+    }
+
+    
+
+    .column-title {
+      font-size: 14px;
+      color: #424141;
+      font-weight: 600;
+      padding-left: 15px;
+      width: 100%;
+
+      &.stage {
+        padding-left: 11px;
+      }
+    }
+
   }
 }
 
