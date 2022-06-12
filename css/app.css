@@ -2664,4 +2664,96 @@ fieldset legend {
 .question-container .item .optionCheker:checked + label {
   border-color: #3A92E3;
 }
+
+.task .card {
+  -webkit-box-shadow: -2px 8px 15px #00000026;
+          box-shadow: -2px 8px 15px #00000026;
+  border-radius: 16px !important;
+}
+
+.task .inner {
+  position: relative;
+  border-bottom: 2px solid #f7f7f7;
+  padding: 11px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.task .inner .task-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #585858;
+  font-weight: 600;
+}
+
+.task .inner .task-label input[type="radio"] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+  position: relative;
+}
+
+.task .inner .task-label input[type="radio"]:checked::after {
+  content: '';
+  height: 12px;
+  width: 12px;
+  background: #b3b6b7;
+  position: absolute;
+  border-radius: 50%;
+  left: 3px;
+  top: 3px;
+}
+
+.task .inner .sub-txt {
+  margin-left: 30px;
+}
+
+.border-radius-10 {
+  border-radius: 10px;
+}
+
+#addTask {
+  background: #e5e5e5e6 !important;
+}
+
+#addTask ::-webkit-input-placeholder {
+  color: lightgrey;
+}
+
+#addTask :-ms-input-placeholder {
+  color: lightgrey;
+}
+
+#addTask ::-ms-input-placeholder {
+  color: lightgrey;
+}
+
+#addTask ::placeholder {
+  color: lightgrey;
+}
+
+#addTask .form-control {
+  outline: 0;
+}
+
+#addTask .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 /*# sourceMappingURL=app.css.map */

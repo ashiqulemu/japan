@@ -2424,3 +2424,77 @@ fieldset {
   }
 
 }
+.task {
+
+
+
+  .card {
+    box-shadow: -2px 8px 15px #00000026;
+    border-radius: 16px !important;
+  }
+
+  .inner {
+    position: relative;
+    border-bottom: 2px solid #f7f7f7;
+    padding: 11px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    .task-label {
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #585858;
+      font-weight: 600;
+
+      input[type="radio"] {
+        appearance: none;
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        border: 1px solid lightgray;
+        position: relative;
+
+        &:checked {
+          &::after {
+            content: '';
+            height: 12px;
+            width: 12px;
+            background: #b3b6b7;
+            position: absolute;
+            border-radius: 50%;
+            left: 3px;
+            top: 3px;
+          }
+        }
+      }
+    }
+
+    .sub-txt {
+      margin-left: 30px;
+    }
+  }
+}
+
+.border-radius-10{
+  border-radius:10px;
+}
+
+
+#addTask{
+  background:#e5e5e5e6 !important;
+  ::placeholder{
+    color: lightgrey;
+  }
+  .form-control{
+    outline: 0;
+    &:focus{
+      box-shadow: none;
+    }
+
+  }
+}
